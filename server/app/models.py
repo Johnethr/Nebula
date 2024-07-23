@@ -2,7 +2,7 @@ from sqlalchemy.sql.expression import text
 from sqlalchemy.orm import relationship
 from sqlalchemy import Column, Integer, String, Float, Boolean, TIMESTAMP, ForeignKey
 
-from .database import Base
+from database import Base
 
 
 class Student(Base):

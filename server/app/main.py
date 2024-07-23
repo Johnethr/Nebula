@@ -3,9 +3,9 @@ import psycopg2
 from fastapi import FastAPI
 from psycopg2.extras import RealDictCursor
 
-from . import models
-from .database import engine
-from .local_env import prod_db_user, prod_db_host, prod_db_name, prod_db_pass
+import models
+from database import engine
+from local_env import prod_db_user, prod_db_host, prod_db_name, prod_db_pass
 
 models.Base.metadata.create_all(bind=engine)
 

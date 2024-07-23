@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-from .local_env import prod_db_user, prod_db_host, prod_db_name, prod_db_pass
+from local_env import prod_db_user, prod_db_host, prod_db_name, prod_db_pass
 
 
 SQLALCHEMY_DATABASE_URL = (
